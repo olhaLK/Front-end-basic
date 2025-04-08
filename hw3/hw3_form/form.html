@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<form action="#" method="POST">
+			<fieldset>
+				<legend>Registration</legend>
+				<p>
+					<label>
+						Your name:*
+						<input type="text" name="name" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Your phone number:*
+						<input type="tel" name="phone" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						E-mail:*
+						<input type="email" name="email" required>
+					</label>
+				</p>
+				<p>
+					<label>
+						Your password:*
+						<input type="password" name="password" required>
+					</label>
+				</p>
+			</fieldset>
+		</form>
+	</div>
+	<div class="wrap">
+		<form action="#" method="POST">
+			<fieldset>
+				<legend>Flight selection</legend>
+				<p>
+					<label>
+						From:
+						<select name="from">
+							<option>Kyiv</option>
+							<option>Warsaw</option>
+							<option>Berlin</option>
+							<option>Paris</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						To:
+						<select name="to">
+							<option>Kyiv</option>
+							<option>Warsaw</option>
+							<option>Berlin</option>
+							<option>Paris</option>
+						</select>
+					</label>
+				</p>
+				<p>
+					<label>
+						There:
+						<input type="date" name="there">
+					</label>
+				</p>
+				<p>
+					<label>
+						Back:
+						<input type="date" name="back">
+					</label>
+				</p>
+				<p>
+					<label>
+						Number of tickets:
+						<input type="number" name="tickets" value="1">
+					</label>
+				</p>
+				<p>
+					<strong>Children</strong>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="children1" value="without" checked>
+						Without
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="children2" value="one_child">
+						1 child
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="children3" value="two_children">
+						2 children
+					</label>
+				</p>
+				<p>
+					<strong>Comfort</strong>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="comfort1">
+						More space for legs
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="comfort2">
+						Meals
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="comfort3" checked>
+						More space for luggage
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="comfort4">
+						Sit near the window
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="comfort5">
+						Sit in the first row
+					</label>
+				</p>
+			</fieldset>
+		</form>
+	</div>
+	<div class="wrap">
+		<form action="#" method="POST">
+			<fieldset>
+				<legend>Information about insurance</legend>
+				<p>
+					Insurance information
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="insurance" checked>
+						I need insurance
+					</label>
+				</p>
+				<p>
+					<strong>Import passport copy</strong>
+				</p>
+				<p>
+					<label>
+						<input type="file" name="passport">
+					</label>
+				</p>
+				<p>
+					<label>
+						<textarea placeholder="Additional information" name="info"></textarea>
+					</label>
+				</p>
+			</fieldset>
+		</form>
+	</div>
+	<div class="wrap">
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</div>
+</body>
+</html>
