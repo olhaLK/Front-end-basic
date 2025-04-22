@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Tahoma, sans-serif;
+    font-style: normal;
+    color: #3D3D3D;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #3D3D3D;
+    font-style: normal;
+    margin-top: 26px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.50);
+}
+
+.logo {
+    float: left;
+    margin-bottom: 17.7px;
+}
+
+.logo svg {
+    width: 150px;
+    height: 34.3px;
+}
+
+.login {
+    float: right;
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    background: #46A358;
+    text-decoration: none;
+}
+
+.login svg {
+    width: 16.278px;
+    height: 15.417px;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.login span{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu {
+    float: left;
+    margin-left: 244px;
+    margin-top: 8px;
+    border-bottom: 3px solid transparent;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 50px;
+    color: #3D3D3D;
+    padding-bottom: 26px;
+}
+
+.menu a:hover {
+    border-bottom: 3px solid #46A358;
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 10px;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50)
+    -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+}
+
+.welcome-block {
+    display: inline-block;
+    margin: 68px 0 85px 40px;
+    vertical-align: top;
+}
+
+h1 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.welcome-block h2 {
+    padding-top: 7px;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: 600px;
+}
+
+.text-planet {
+    color: #46A358;
+}
+
+.text-description {
+    padding-top: 5px;
+    width: 557px;
+    height: 45px;
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 557px;
+}
+
+.image-block {
+    display: inline-block;
+    width: 487px;
+    height: 450px;
+    margin-left: 60px;
+}
+
+.btn-shop {
+    cursor: pointer;
+    margin-top: 44px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
