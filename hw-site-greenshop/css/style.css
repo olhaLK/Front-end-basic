@@ -10,7 +10,9 @@
 }
 
 .wrapper {
-    width: 1200px;
+    max-width: 1220px;
+    min-width: 1000px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -27,12 +29,14 @@
     color: #3D3D3D;
     font-style: normal;
     margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 0.3px solid rgba(70, 163, 88, 0.50);
 }
 
 .logo {
-    float: left;
-    margin-bottom: 17.7px;
+    display: flex;
 }
 
 .logo img {
@@ -41,7 +45,9 @@
 }
 
 .login {
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 35px;
     border-radius: 6px;
@@ -50,32 +56,33 @@
 }
 
 .login svg {
-    width: 16.278px;
-    height: 15.417px;
-    margin-top: 10px;
-    margin-left: 18px;
+    display: flex;
+
 }
 
 .login span{
+    display: flex;
+    padding-left: 4px;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
 }
 
 .menu {
-    float: left;
-    margin-left: 244px;
-    margin-top: 8px;
-    border-bottom: 3px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu a {
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     font-size: 16px;
     font-weight: 800;
-    margin-left: 50px;
     color: #3D3D3D;
-    padding-bottom: 26px;
+    padding: 26px 25px;
+    border-bottom: 3px solid transparent;
 }
 
 .menu a:hover {
@@ -85,14 +92,17 @@
 
 .welcome {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50)
     -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
 .welcome-block {
-    display: inline-block;
-    margin: 68px 0 85px 40px;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 h1 {
@@ -126,10 +136,7 @@ h1 {
 }
 
 .image-block {
-    display: inline-block;
-    width: 487px;
-    height: 450px;
-    margin-left: 60px;
+    display: flex;
 }
 
 .btn-shop {
@@ -256,25 +263,24 @@ h1 {
     flex-shrink: 0;
 }
 
-.products {
+.list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
+    margin:38px -10px 0;
 }
 
-.product {
-    margin-bottom: 60px;
+.item {
+    width: 33.333%;
+    padding: 0 10px 20px;
     border-top: 2px solid transparent;
     background:  #FBFBFB;
 }
 
-.product:hover {
+.item:hover {
     border-top: 2px solid #46A358;
 }
 
-.product-image {
+.item-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +294,7 @@ h1 {
     height: auto;
 }
 
-.product-name{
+.item-name{
     color: #3D3D3D;
     text-decoration: none;
     font-size: 16px;
@@ -298,7 +304,7 @@ h1 {
     display: block;
 }
 
-.product-price {
+.item-price {
     display: block;
     color: #46A358;
     font-size: 18px;
