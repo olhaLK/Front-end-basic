@@ -48,8 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 35px;
+    padding: 8px 17px;
     border-radius: 6px;
     background: #46A358;
     text-decoration: none;
@@ -57,7 +56,6 @@
 
 .login svg {
     display: flex;
-
 }
 
 .login span{
@@ -103,6 +101,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-left: 40px;
 }
 
 h1 {
@@ -142,8 +141,7 @@ h1 {
 .btn-shop {
     cursor: pointer;
     margin-top: 44px;
-    width: 140px;
-    height: 40px;
+    padding: 10px 26px;
     border: none;
     border-radius: 6px;
     background: #46A358;
@@ -154,11 +152,22 @@ h1 {
     text-transform: uppercase;
 }
 
+.container {
+    display: flex;
+    margin-top: 46px;
+}
+
+.content-left {
+    width: 25%;
+}
+
+.content-right {
+    width: 75%;
+}
+
 .categories {
     padding: 0 23px 19px 17px;
-    float: left;
     background: #FBFBFB;
-    margin-top: 46px;
 }
 
 .categories h2 {
@@ -171,30 +180,27 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-top: 13px;
 }
 
 .categories li {
-    padding-top: 16px;
-    padding-left: 11px;
+    display: flex;
+    padding: 13px 0 13px 11px;
     font-size: 15px;
     font-weight: 400;
-    line-height: 266.667%;
 }
 
 .categories a {
-    float: left;
     text-decoration: none;
     color: #3D3D3D;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .categories a:hover {
     color: #46A358;
     font-weight: 700;
-}
-
-.categories a span {
-    float: right;
 }
 
 .sorting {
@@ -205,7 +211,6 @@ h1 {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 46px;
     padding: 0;
 
 }
@@ -314,7 +319,8 @@ h1 {
 }
 
 .paginator {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     margin-top: 90px;
 }
 
