@@ -64,7 +64,7 @@
     line-height: normal;
     color: #3D3D3D;
     font-style: normal;
-    margin-top: 26px;
+    margin-top: 23px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,16 +90,32 @@
     position: relative;
 }
 
+.cart:hover path{
+    fill: #46A358;
+}
+
+.loop:hover path {
+    fill: #46A358;
+}
+
 .cart_numbers {
     position: absolute;
-    left: 14px;
+    top: -1px;
+    right: -7px;
+    background: #46A358;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    padding: 1px 4px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 17px;
+    padding: 8px 19px;
     border-radius: 6px;
     background: #46A358;
     text-decoration: none;
@@ -112,25 +128,113 @@
     font-weight: 400;
 }
 
+.nav {
+    margin-left: -4px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
-.menu a {
+.menu li {
+    list-style: none;
+    position: relative;
+}
+
+
+.menu > li > a {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     font-size: 16px;
     color: #3D3D3D;
     padding: 24px 25px;
-    border-bottom: 3px solid transparent;
+    position: relative;
 }
 
-.menu a:hover {
-    border-bottom: 3px solid #46A358;
+.menu > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 3px;
+    background-color: #46A358;
+}
+
+.menu > li:hover > a::after {
+    width: 60%;
+}
+
+.menu > li:hover > a {
     font-weight: 600;
+}
+
+.menu ul a {
+    color: #3D3D3D;
+    font-family: 'Cera Pro', 'Tahoma', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    display: flex;
+    padding: 8px 14px;
+    justify-content: space-between;
+}
+
+.arrow_open {
+    margin: 7px 0;
+}
+
+.menu li:last-child:hover .arrow_open {
+    transform: rotate(180deg);
+}
+.menu li:last-child:hover .arrow_open path{
+    fill: #FFFFFF;
+}
+
+.menu ul li:hover > a {
+    color: #FFFFFF;
+    background: #1A712A;
+}
+
+.menu ul::before {
+    content: "";
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-color: transparent;
+    display: block;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    left: 25px;
+    width: 188px;
+    padding-left: 0;
+    background: #EDF6EE;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu ul {
+    margin-top: 12px;
+}
+
+.menu ul ul {
+    width: 178px;
+    position: absolute;
+    top: -120px;
+    left: 190px;
 }
 
 .welcome {
@@ -186,7 +290,7 @@ h1 {
     font-family: 'Cera Pro', 'Tahoma', sans-serif;
     cursor: pointer;
     margin-top: 44px;
-    padding: 10px 26px;
+    padding: 10px 27px;
     border: none;
     border-radius: 6px;
     background: #46A358;
@@ -199,12 +303,12 @@ h1 {
 
 .container {
     display: flex;
-    margin: 46px -10px 0;
+    margin: 42px -10px 0;
 }
 
 .content-left {
     width: 25%;
-    padding: 0 10px;
+    padding: 16px 10px 0 26px;
 }
 
 .content-right {
@@ -225,11 +329,11 @@ h1 {
 .categories ul {
     list-style: none;
     margin: 0;
-    padding: 13px 0 0 11px;
+    padding: 17px 0 0 11px;
 }
 
 .categories li {
-    padding: 13px 0;
+    padding-bottom: 21px;
     font-size: 15px;
 }
 
@@ -240,9 +344,19 @@ h1 {
     justify-content: space-between;
 }
 
+.categories span {
+    padding-right: 18px;
+}
+
 .categories a:hover {
     color: #46A358;
     font-weight: 600;
+}
+
+.categories aside img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .sorting {
@@ -253,7 +367,6 @@ h1 {
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
-
 }
 
 .filter {
@@ -266,7 +379,7 @@ h1 {
 }
 
 .filter li {
-    padding-right: 40px;
+    padding-right: 32px;
 }
 
 .filter button {
@@ -277,6 +390,7 @@ h1 {
     font-size: 15px;
     font-weight: 200;
     cursor: pointer;
+    padding-bottom: 4px;
 }
 
 .filter button:hover {
@@ -292,7 +406,7 @@ h1 {
 }
 
 .text-sort {
-    padding-right: 9px;
+    padding-right: 14px;
 }
 
 .sorting-right .sort-button {
@@ -310,17 +424,18 @@ h1 {
     width: 13px;
     height: 8px;
     flex-shrink: 0;
+    margin-left: 14px;
 }
 
 .list {
     display: flex;
     flex-wrap: wrap;
-    margin:38px -10px 0;
+    margin: 32px -10px 0;
 }
 
 .item {
     width: 33.333%;
-    padding: 0 10px 20px;
+    padding: 0 10px 67px;
 }
 
 .item-inset {
@@ -340,7 +455,6 @@ h1 {
 }
 
 .img-responsive {
-    width: 100%;
     height: auto;
 }
 
@@ -373,7 +487,6 @@ h1 {
     position: absolute;
     bottom: 7px;
     display: flex;
-    gap: 16px;
 }
 
 .item-icons {
@@ -403,14 +516,14 @@ h1 {
     padding: 9px;
     background: #46A358;
     position: absolute;
-    top: 14px;
+    top: 8px;
     left: 0;
 }
 
 .paginator {
     display: flex;
     justify-content: flex-end;
-    margin-top: 90px;
+    margin-top: 22px;
 }
 
 .pages {
@@ -443,6 +556,7 @@ h1 {
     padding: 0 11.6px;
     display: flex;
     align-items: center;
+    margin-right: 3px;
 }
 
 .previous:hover {
