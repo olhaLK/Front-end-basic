@@ -248,7 +248,7 @@
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
   }
-  .header .menu__list a:hover {
+  .header .menu__list a:not(.active):hover {
     border-bottom: 2px solid #24A3FF;
   }
   .header .menu__list:hover {
@@ -302,4 +302,146 @@
   font-family: "Montserrat", "Tahoma", sans-serif;
   font-style: normal;
   line-height: normal;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__address-text {
+  color: #323264;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__address-link {
+  color: #24A3FF;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__fb {
+  display: flex;
+  text-align: right;
+  width: 38px;
+  height: 38px;
+  fill: #24A3FF;
+  margin-top: 21px;
+}
+.footer__fb:hover {
+  fill: #F0145A;
+}
+.footer__tel {
+  text-decoration: none;
+  color: #46466E;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer__mail {
+  text-decoration: none;
+  color: #24A3FF;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__mail:hover {
+  color: #F0145A;
+}
+.footer__copyright {
+  color: #B3B3BA;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: stretch;
+  margin-top: 30px;
+}
+
+@media (min-width: 648px) {
+  .footer__address {
+    flex-direction: row;
+  }
+  .footer__address-link {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer__address-link::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #E6E6F0;
+  }
+  .footer__contacts {
+    flex-direction: row;
+    margin-top: 21px;
+  }
+  .footer__fb {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  .footer__tel {
+    display: flex;
+    align-items: center;
+  }
+  .footer__tel::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #E6E6F0;
+  }
+  .footer__mail {
+    display: flex;
+    align-items: center;
+  }
+  .footer__mail::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #E6E6F0;
+  }
+}
+@media (min-width: 991px) {
+  .footer {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .footer__address, .footer__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer__copyright {
+    align-self: flex-start;
+    margin: 0;
+  }
 }

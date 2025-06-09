@@ -234,7 +234,7 @@
                         color: #F0145A;
                         border-bottom: 2px solid #F0145A;
                     }
-                    &:hover {
+                    &:not(.active):hover {
                         border-bottom: 2px solid #24A3FF;
                     }
                 }
