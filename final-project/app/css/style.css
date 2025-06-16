@@ -8,8 +8,8 @@
 }
 
 .wrapper {
-  max-width: 1320px;
-  min-width: 315px;
+  max-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -409,6 +409,7 @@
   align-items: center;
   flex-direction: column;
   padding: 30px;
+  border-top: solid 2px #E6E6F0;
 }
 .footer__address {
   display: flex;
@@ -597,6 +598,7 @@
   margin: 143px 15px 159px 15px;
 }
 .slogan__btn {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   width: 42px;
@@ -613,4 +615,54 @@
 }
 .slogan__btn svg:hover {
   opacity: 0.7;
+}
+
+.profits__label {
+  font-size: 30px;
+  font-weight: 700;
+  background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.profits__item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.profits__item-img {
+  padding: 14px;
+  gap: 10px;
+  border-radius: 24px;
+  background: #FFFFFF;
+}
+.profits__item-img img {
+  width: 64px;
+  height: 64px;
+}
+.profits__item a {
+  text-decoration: none;
+}
+.profits__item-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #24A3FF;
+  font-size: 22px;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+.profits__item-title:hover {
+  opacity: 0.7;
+}
+.profits__item-description {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+.profits .row {
+  /* --bs-gutter-x: 30px;*/
+  --bs-gutter-y: 30px;
 }
