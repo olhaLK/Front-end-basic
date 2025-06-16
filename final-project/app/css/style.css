@@ -282,6 +282,105 @@
     padding: 16px 0 0;
   }
 }
+.header--light {
+  background-color: #FFFFFF;
+}
+.header--light .header__lang a {
+  color: #B3B3BA;
+}
+.header--light .header__lang a:hover {
+  background-color: #F5F5FA;
+}
+.header--light .header__lang a.active {
+  background-color: #F0145A;
+  color: #FFFFFF;
+}
+.header--light .header__address,
+.header--light .header__tel {
+  color: #B3B3BA;
+}
+.header--light .header__fb {
+  fill: #B3B3BA;
+}
+.header--light .header__fb:hover {
+  fill: #F0145A;
+}
+.header--light .header__logo-box__breadcrumbs {
+  color: #323264;
+}
+.header--light .menu__list a {
+  color: #24A3FF;
+  background-color: #F5F5FA;
+}
+.header--light .menu__list a.active {
+  color: #F0145A;
+}
+@media (min-width: 648px) {
+  .header--light .menu__list a {
+    background-color: transparent;
+  }
+  .header--light .menu__list a.active {
+    border-bottom: 2px solid #F0145A;
+  }
+  .header--light .menu__list a:not(.active):hover {
+    border-bottom: 2px solid #24A3FF;
+  }
+}
+
+.header--dark {
+  background-color: #323264;
+}
+.header--dark .header__top {
+  background-color: #323264;
+}
+.header--dark .header__lang a {
+  color: #FFFFFF;
+}
+.header--dark .header__lang a:hover {
+  background-color: #46466E;
+}
+.header--dark .header__lang a.active {
+  background-color: #F0145A;
+  color: #FFFFFF;
+}
+.header--dark .header__address,
+.header--dark .header__tel {
+  color: #FFFFFF;
+}
+.header--dark .header__fb {
+  fill: #FFFFFF;
+}
+.header--dark .header__fb:hover {
+  fill: #F0145A;
+}
+.header--dark .header__logo-box__breadcrumbs {
+  color: #FFFFFF;
+}
+.header--dark .menu__btn {
+  background-image: url(../img/menu-btn-wh.svg);
+}
+.header--dark .menu__list a {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+.header--dark .menu__list a.active {
+  color: #F0145A;
+}
+.header--dark .menu__list a:not(.active):hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+@media (min-width: 648px) {
+  .header--dark .menu__list a {
+    background-color: transparent;
+  }
+  .header--dark .menu__list a.active {
+    border-bottom: 2px solid #F0145A;
+  }
+  .header--dark .menu__list a:not(.active):hover {
+    border-bottom: 2px solid #FFFFFF;
+  }
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

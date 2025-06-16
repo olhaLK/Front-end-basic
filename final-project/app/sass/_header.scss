@@ -132,7 +132,6 @@
     }
 }
 
-
 @media (min-width: 648px) {
     .header {
         grid-template-columns: 1fr;
@@ -213,8 +212,6 @@
             padding: 0;
             &__btn {
                 display: none;
-                &.active {
-                }
             }
             &__list {
                 display: flex;
@@ -246,7 +243,6 @@
     }
 }
 
-
 @media (min-width: 991px) {
     .header {
         grid-template-columns: auto 1fr;
@@ -270,6 +266,112 @@
             justify-content: flex-end;
             &__list {
                 padding: 16px 0 0;
+            }
+        }
+    }
+}
+
+
+
+.header--light {
+    background-color: #FFFFFF;
+    .header__lang a {
+        color: #B3B3BA;
+        &:hover {
+            background-color: #F5F5FA;
+        }
+        &.active {
+            background-color: #F0145A;
+            color: #FFFFFF;
+        }
+    }
+    .header__address,
+    .header__tel {
+        color: #B3B3BA;
+    }
+    .header__fb {
+        fill: #B3B3BA;
+        &:hover {
+            fill: #F0145A;
+        }
+    }
+    .header__logo-box__breadcrumbs {
+        color: #323264;
+    }
+    .menu__list a {
+        color: #24A3FF;
+        background-color: #F5F5FA;
+        &.active {
+            color: #F0145A;
+        }
+
+    }
+
+    @media (min-width: 648px) {
+        .menu__list a {
+            background-color: transparent;
+            &.active {
+                border-bottom: 2px solid #F0145A;
+            }
+            &:not(.active):hover {
+                border-bottom: 2px solid #24A3FF;
+            }
+        }
+    }
+}
+
+
+
+.header--dark {
+    background-color: #323264;
+    .header__top {
+        background-color: #323264;
+    }
+    .header__lang a {
+        color: #FFFFFF;
+        &:hover {
+            background-color: #46466E;
+        }
+        &.active {
+            background-color: #F0145A;
+            color: #FFFFFF;
+        }
+    }
+    .header__address,
+    .header__tel {
+        color: #FFFFFF;
+    }
+    .header__fb {
+        fill: #FFFFFF;
+        &:hover {
+            fill: #F0145A;
+        }
+    }
+    .header__logo-box__breadcrumbs {
+        color: #FFFFFF;
+    }
+    .menu__btn {
+        background-image: url(../img/menu-btn-wh.svg);
+    }
+    .menu__list a {
+        color: #FFFFFF;
+        background-color: transparent;
+        &.active {
+            color: #F0145A;
+        }
+        &:not(.active):hover {
+            border-bottom: 2px solid #FFFFFF;
+        }
+    }
+
+    @media (min-width: 648px) {
+        .menu__list a {
+            background-color: transparent;
+            &.active {
+                border-bottom: 2px solid #F0145A;
+            }
+            &:not(.active):hover {
+                border-bottom: 2px solid #FFFFFF;
             }
         }
     }
