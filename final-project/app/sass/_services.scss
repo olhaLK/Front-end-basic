@@ -1,0 +1,32 @@
+.services {
+    &__list {
+        list-style: none;
+        button {
+            border: none;
+            background-color: transparent;
+            color: #B3B3BA;
+            font-size: 38px;
+            font-weight: 700;
+        }
+    }
+    &__content {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #24A3FF;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        svg {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}

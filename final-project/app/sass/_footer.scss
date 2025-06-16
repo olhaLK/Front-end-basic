@@ -70,7 +70,7 @@
 }
 
 
-@media (min-width: 648px) {
+@media (min-width: 768px) {
     .footer {
         &__address {
             flex-direction: row;
@@ -131,7 +131,7 @@
 }
 
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     .footer {
         justify-content: space-between;
         align-items: flex-start;
