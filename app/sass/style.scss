@@ -1,2 +1,11 @@
-@use 'start';
-@use 'fonts';
+@import "start";
+@import "header";
+@import "fonts";
+@import "body";
+@import "footer";
+@import "services";
+@import "gradient";
+@import "slogan";
+@import "profits";
+@import "slider";
+@import "../../node_modules/slick-carousel/slick/slick.scss";

@@ -1,0 +1,32 @@
+.gradient {
+    background: var(--Gradient-Supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%));;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0 0 12px 12px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+.bg-letter {
+    background: url("../img/bg-letter.svg") no-repeat top center;
+    background-size: auto 100%;
+}

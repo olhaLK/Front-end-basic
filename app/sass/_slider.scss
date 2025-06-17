@@ -1,0 +1,51 @@
+.slider {
+    margin-top: 50px;
+    &__item {
+        &-img {
+            height: 500px;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 12px 12px 0 0;
+        }
+        &-container {
+            background: #F5F5FA;
+            padding: 30px;
+            &-link {
+                span{}
+                svg {}
+            }
+            &-text {
+                overflow-wrap: break-word;
+                font-size: 30px;
+                font-weight: 700;
+                background: var(--Gradient-Red-Text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    &__dots {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 0 7px;
+            &.slick-active button {
+                opacity: 1;
+            }
+        }
+        button {
+            cursor: pointer;
+            background-color: #24A3FF;
+            opacity: 0.2;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: none;
+            font-size: 0;
+        }
+    }
+}
