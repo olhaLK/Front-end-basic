@@ -8,83 +8,92 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body class="body">
 
 
     <div class="gradient">
-        <div class="wrapper">
-            <div class="bg-letter">
-                <header class="header header--dark">
-                    <div class="header__top">
-                        <ul class="header__lang">
-                            <li><a href="#">УК</a></li>
-                            <li><a href="#">РУ</a></li>
-                            <li><a href="#" class="active">EN</a></li>
-                        </ul>
-                        <div class="header__address">Kyiv, Mechnikova str., 14/1</div>
-                        <a href="tel:0800211927" class="header__tel">0800 211 927</a>
-                        <a href="#" class="header__fb">
-                            <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
-                        </a>
-                    </div>
-                    <div class="header__logo-box">
-                        <a href="index.html" class="header__logo-box-logo">
-                            <img src="img/logo-wh.svg" alt="">
-                        </a>
-                    </div>
-                    <nav class="menu">
-                        <button type="button" class="menu__btn"></button>
-                        <ul class="menu__list">
-                            <li><a href="about.html">about us</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">team</a></li>
-                            <li><a href="#">publications</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </nav>
-                </header>
+        <div class="bg-letter">
+            <header class="header header--dark">
+                <div class="header__top">
+                    <ul class="header__lang">
+                        <li><a href="#">УК</a></li>
+                        <li><a href="#">РУ</a></li>
+                        <li><a href="#" class="active">EN</a></li>
+                    </ul>
+                    <div class="header__address">Kyiv, Mechnikova str., 14/1</div>
+                    <a href="tel:0800211927" class="header__tel">0800 211 927</a>
+                    <a href="#" class="header__fb">
+                        <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                    </a>
+                </div>
 
-                <section class="slogan">
-                    <p class="slogan__text">you legal solutions provider</p>
-                    <button type="button" class="slogan__btn">
-                        <svg><use xlink:href="img/sprite.svg#btn-scroll"></use></svg>
-                    </button>
-                </section>
+                <div class="header__logo-box">
+                    <a href="index.html" class="header__logo-box-logo">
+                        <img src="img/logo-wh.svg" alt="">
+                    </a>
+                </div>
+
+                <nav class="menu">
+                    <button type="button" class="menu__btn"></button>
+                    <ul class="menu__list">
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">publications</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+                <div class="wrapper">
+                    <section class="slogan">
+                        <p class="slogan__text">you legal solutions provider</p>
+                        <button type="button" class="slogan__btn">
+                            <svg><use xlink:href="img/sprite.svg#btn-scroll"></use></svg>
+                        </button>
+                    </section>
+                </div>
             </div>
 
-            <section class="services">
-                <ul class="services__list">
-                    <li><button type="button">Consistent</button></li>
-                    <li><button type="button">Customer oriented</button></li>
-                    <li><button type="button">Innovative</button></li>
-                    <li><button type="button">Business oriented</button></li>
-                </ul>
+
+        <section class="services">
+            <ul class="services__list">
+                <li><button class="active" type="button">Consistent</button></li>
+                <li><button type="button">Customer oriented</button></li>
+                <li><button type="button">Innovative</button></li>
+                <li><button type="button">Business oriented</button></li>
+            </ul>
+            <div class="wrapper">
                 <div class="services__content active">
-                    <p>We turn the idea of legal services</p>
-                    <p>Consolidating many years of experience and practice,
+                    <p class="services__content-title">We turn the idea of legal services</p>
+                    <p class="services__content-description">Consolidating many years of experience and practice,
                         the company's lawyers accompany complex projects and achieve a number of
                         important decisions for the industry. Many of them form the practice
                         of applying the law of the sea in Ukraine.</p>
                 </div>
                 <div class="services__content">
-                    <p>lorem</p>
-                    <p>lorem</p>
+                    <p class="services__content-title">lorem</p>
+                    <p class="services__content-description">lorem</p>
                 </div>
                 <div class="services__content">
-                    <p>lorem</p>
-                    <p>lorem</p>
+                    <p class="services__content-title">lorem</p>
+                    <p class="services__content-description">lorem</p>
                 </div>
                 <div class="services__content">
-                    <p>lorem</p>
-                    <p>lorem</p>
+                    <p class="services__content-title">lorem</p>
+                    <p class="services__content-description">lorem</p>
                 </div>
-                <a href="#" class="services__btn">
+            </div>
+        </section>
+
+
+        <div class="wrapper">
+            <section class="profits">
+                <a href="#" class="profits__btn">
                     <span>services</span>
                     <svg><use xlink:href="img/sprite.svg#arrow"></use></svg>
                 </a>
-            </section>
-
-            <section class="profits">
                 <p class="profits__label">What can we do better than others?</p>
                 <div class="container-fluid">
                     <div class="row">
@@ -165,10 +174,99 @@
 
 
     <main class="main">
+
        <div class="wrapper">
-           <section class="slider"></section>
+           <section class="slider js-slider">
+               <div class="slider__item">
+                   <img class="slider__item-img" src="img/slider-ph.png" alt="">
+                   <div class="slider__item-container">
+                       <a href="#" class="slider__item-container-link">
+                           <span>команда</span>
+                           <svg><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                       </a>
+                       <p class="slider__item-container-text">
+                           Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу,
+                           навіть у ситуаціях, коли більшість безсилі.
+                       </p>
+                       <p class="slider__item-container-name">Олександр Олександровський</p>
+                       <p class="slider__item-container-status">Керуючий партнер</p>
+                   </div>
+               </div>
+               <div class="slider__item">
+                   <img class="slider__item-img" src="img/slider-ph.png" alt="">
+                   <div class="slider__item-container">
+                       <a href="#" class="slider__item-container-link">
+                           <span>команда</span>
+                           <svg><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                       </a>
+                       <p class="slider__item-container-text">
+                           Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу,
+                           навіть у ситуаціях, коли більшість безсилі.
+                       </p>
+                       <p class="slider__item-container-name">Олександр Олександровський</p>
+                       <p class="slider__item-container-status">Керуючий партнер</p>
+                   </div>
+               </div>
+               <div class="slider__item">
+                   <img class="slider__item-img" src="img/slider-ph.png" alt="">
+                   <div class="slider__item-container">
+                       <a href="#" class="slider__item-container-link">
+                           <span>команда</span>
+                           <svg><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                       </a>
+                       <p class="slider__item-container-text">
+                           Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу,
+                           навіть у ситуаціях, коли більшість безсилі.
+                       </p>
+                       <p class="slider__item-container-name">Олександр Олександровський</p>
+                       <p class="slider__item-container-status">Керуючий партнер</p>
+                   </div>
+               </div>
+            </section>
        </div>
-        <section class="clients"></section>
+
+        <section class="clients">
+            <p class="clients__trust">They already trust us</p>
+            <div class="clients__container">
+                <div class="clients__item clients__item--hillel">
+                    <img src="img/hillel.png" alt="Hillel">
+                </div>
+                <div class="clients__item clients__item--wannabiz">
+                    <img src="img/wannabiz.png" alt="WannaBiz">
+                </div>
+                <div class="clients__item clients__item--tapgerine">
+                    <img src="img/tapgerine.png" alt="Tapgerine">
+                </div>
+                <div class="clients__item clients__item--3dlook">
+                    <img src="img/3dlook.png" alt="3DLook">
+                </div>
+                <div class="clients__item clients__item--orangear">
+                    <img src="img/orangear.png" alt="Orangear">
+                </div>
+                <div class="clients__item clients__item--adtellige">
+                    <img src="img/adtellige.png" alt="Adtellige">
+                </div>
+                <div class="clients__item clients__item--clickly">
+                    <img src="img/clickly.png" alt="Clickly">
+                </div>
+                <div class="clients__item clients__item--ecolease">
+                    <img src="img/ecolease.png" alt="Ecolease">
+                </div>
+                <div class="clients__item clients__item--infratek">
+                    <img src="img/infratek.png" alt="Infratek">
+                </div>
+                <div class="clients__item clients__item--citypark">
+                    <img src="img/citypark.png" alt="Citypark">
+                </div>
+                <div class="clients__item clients__item--artprint">
+                    <img src="img/artprint.png" alt="Artprint">
+                </div>
+                <div class="clients__item clients__item--ultimate">
+                    <img src="img/ultimate.png" alt="Ultimate">
+                </div>
+            </div>
+        </section>
+
         <section class="punli">
             <div class="wrapper">
 
@@ -195,6 +293,12 @@
             <div class="footer__copyright">© 2021 HLEGAL Law company, LLC</div>
         </footer>
     </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,108 @@
+.clients {
+    &__trust {
+        display: flex;
+        justify-content: center;
+        color: #323264;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 60px;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        padding: 20px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        &--hillel {
+            background-color: #1C4280;
+        }
+        &--wannabiz {
+            background-color: #143646;
+        }
+        &--tapgerine {
+            background-color: #F48B30;
+        }
+        &--3dlook {
+            background-color: #9E4DC3;
+        }
+        &--orangear {
+            background-color: #FD9339;
+        }
+        &--adtellige {
+            background-color: #E2E2E4;
+        }
+        &--clickly {
+            display: none;
+            background-color: #C71C36;
+        }
+        &--ecolease {
+            display: none;
+            background-color: #DCF3F9;
+        }
+        &--infratek {
+            display: none;
+            background-color: #EAEAEA;
+        }
+        &--citypark {
+            display: none;
+            background-color: #282240;
+        }
+        &--artprint {
+            display: none;
+            background-color: #1D4568;
+        }
+        &--ultimate {
+            display: none;
+            background-color: #000000;
+        }
+    }
+}
+
+
+@media(min-width: 768px) {
+    .clients {
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__item {
+            &--clickly {
+                display: flex;
+            }
+            &--ecolease {
+                display: flex;
+            }
+            &--infratek {
+                display: flex;
+            }
+            &--citypark {
+                display: flex;
+            }
+            &--artprint {
+                display: flex;
+            }
+            &--ultimate {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .clients {
+        &__container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

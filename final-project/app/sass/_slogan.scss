@@ -22,9 +22,9 @@
             height: 100%;
             display: block;
             fill: transparent;
-            transition: opacity 0.3s ease;
-            &:hover {
-                opacity: 0.7;
+            transition: stroke 0.3s ease;
+            &:hover path {
+                stroke: #F0145A;
             }
         }
 
