@@ -6,45 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"  href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/montserrat-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v30-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body class="body">
 
 
-    <div class="wrapper">
-        <header class="header header--light">
-            <div class="header__top">
-                <ul class="header__lang">
-                    <li><a href="#">УК</a></li>
-                    <li><a href="#">РУ</a></li>
-                    <li><a href="#" class="active">EN</a></li>
-                </ul>
-                <div class="header__address">Kyiv, Mechnikova str., 14/1</div>
-                <a href="tel:0800211927" class="header__tel">0800 211 927</a>
-                <a href="#" class="header__fb">
-                    <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
-                </a>
-            </div>
+    <header class="header header--light">
+        <div class="header__top">
+            <ul class="header__lang">
+                <li><a href="#">УК</a></li>
+                <li><a href="#">РУ</a></li>
+                <li><a href="#" class="active">EN</a></li>
+            </ul>
+            <div class="header__address">Kyiv, Mechnikova str., 14/1</div>
+            <a href="tel:0800211927" class="header__tel">0800 211 927</a>
+            <a href="#" class="header__fb">
+                <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
+            </a>
+        </div>
 
-            <div class="header__logo-box">
-                <a href="index.html" class="header__logo-box-logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <span class="header__logo-box__breadcrumbs">about us</span>
-            </div>
+        <div class="header__logo-box">
+            <a href="index.html" class="header__logo-box-logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <span class="header__logo-box__breadcrumbs">about us</span>
+        </div>
 
-            <nav class="menu">
-                <button type="button" class="menu__btn"></button>
-                <ul class="menu__list">
-                    <li><a href="#" class="active">about us</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">team</a></li>
-                    <li><a href="#">publications</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+        <nav class="menu">
+            <button type="button" class="menu__btn"></button>
+            <ul class="menu__list">
+                <li><a href="#" class="active">about us</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">team</a></li>
+                <li><a href="#">publications</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
     <main class="main">
@@ -103,7 +103,7 @@
 
             <div class="wrapper">
                 <div class="about__under">
-                    <p class="about__under-text-">
+                    <p class="about__under-text">
                         The historically unchanged legal profession has begun to reformat in recent years. Clients are
                         feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity,
                         transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution
@@ -115,6 +115,30 @@
                     <h2 class="about__under-title">
                         Quality is what we care about the most.
                     </h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="achieve">
+            <div class="wrapper">
+                <p class="achieve__title">achievements</p>
+                <div class="achieve__slider js-slider-02">
+                    <div class="achieve__slider-item">
+                        <img class="achieve__slider-item-img" src="img/slider-achieve-01.png" alt="">
+                    </div>
+                    <div class="achieve__slider-item">
+                        <img class="achieve__slider-item-img" src="img/slider-achieve-02.png" alt="">
+                    </div>
+                    <div class="achieve__slider-item">
+                        <img class="achieve__slider-item-img" src="img/slider-achieve-03.png" alt="">
+                    </div>
+                    <div class="achieve__slider-item">
+                        <img class="achieve__slider-item-img" src="img/slider-achieve-04.png" alt="">
+                    </div>
+                    <div class="achieve__slider-item">
+                        <img class="achieve__slider-item-img" src="img/slider-achieve-01.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -140,6 +164,11 @@
         </footer>
     </div>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

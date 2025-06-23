@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"  href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/montserrat-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v30-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
@@ -14,49 +16,45 @@
 
     <div class="gradient">
         <div class="bg-letter">
-            <div class="wrapper">
-                <header class="header header--dark">
-                    <div class="header__top">
-                        <ul class="header__lang">
-                            <li><a href="#">УК</a></li>
-                            <li><a href="#">РУ</a></li>
-                            <li><a href="#" class="active">EN</a></li>
-                        </ul>
-                        <div class="header__address">Kyiv, Mechnikova str., 14/1</div>
-                        <a href="tel:0800211927" class="header__tel">0800 211 927</a>
-                        <a href="#" class="header__fb">
-                            <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
-                        </a>
-                    </div>
+            <header class="header header--dark">
+                <div class="header__top">
+                    <ul class="header__lang">
+                        <li><a href="#">УК</a></li>
+                        <li><a href="#">РУ</a></li>
+                        <li><a href="#" class="active">EN</a></li>
+                    </ul>
+                    <div class="header__address">Kyiv, Mechnikova str., 14/1</div>
+                    <a href="tel:0800211927" class="header__tel">0800 211 927</a>
+                    <a href="#" class="header__fb">
+                        <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                    </a>
+                </div>
 
-                    <div class="header__logo-box">
-                        <a href="index.html" class="header__logo-box-logo">
-                            <img src="img/logo-wh.svg" alt="">
-                        </a>
-                    </div>
+                <div class="header__logo-box">
+                    <a href="index.html" class="header__logo-box-logo">
+                        <img src="img/logo-wh.svg" alt="">
+                    </a>
+                </div>
 
-                    <nav class="menu">
-                        <button type="button" class="menu__btn"></button>
-                        <ul class="menu__list">
-                            <li><a href="about.html">about us</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">team</a></li>
-                            <li><a href="#">publications</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </nav>
-                </header>
+                <nav class="menu">
+                    <button type="button" class="menu__btn"></button>
+                    <ul class="menu__list">
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">publications</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-
-                <section class="slogan">
-                    <p class="slogan__text">you legal solutions provider</p>
-                        <button type="button" class="slogan__btn">
-                            <svg><use xlink:href="img/sprite.svg#btn-scroll"></use></svg>
-                        </button>
-                </section>
-            </div>
+            <section class="slogan">
+                <p class="slogan__text">you legal solutions provider</p>
+                <button type="button" class="slogan__btn">
+                    <svg><use xlink:href="img/sprite.svg#btn-scroll"></use></svg>
+                </button>
+            </section>
         </div>
-
 
         <section class="services">
             <ul class="services__list">
@@ -114,7 +112,7 @@
                                 <div class="profits__item-img">
                                     <img src="img/ic-profits-02.svg" alt="">
                                 </div>
-                                <h3 class="profits__item-title">Comprehensive daily legal support</h3>
+                                <a href="#"><h3 class="profits__item-title">Comprehensive daily legal support</h3></a>
                                 <p class="profits__item-description">In addition, over time, the work will become the same type and
                                     uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good
                                     candidate with experience in the field of information technology in Ukraine.</p>
@@ -126,7 +124,7 @@
                                 <div class="profits__item-img">
                                     <img src="img/ic-profits-03.svg" alt="">
                                 </div>
-                                <h3 class="profits__item-title">Structuring corporate relationships</h3>
+                                <a href="#"><h3 class="profits__item-title">Structuring corporate relationships</h3></a>
                                 <p class="profits__item-description">Instead of just providing legal services, we will
                                     hire a lawyer or a whole team that will fit into the daily life of your company.</p>
                             </div>
@@ -137,7 +135,7 @@
                                 <div class="profits__item-img">
                                     <img src="img/ic-profits-04.svg" alt="">
                                 </div>
-                                <h3 class="profits__item-title">Building contractual relations</h3>
+                                <a href="#"><h3 class="profits__item-title">Building contractual relations</h3></a>
                                 <p class="profits__item-description">Once a week, or week after month, you have your own
                                     lawyer by your side. Anyone in the company can catch it at the coffee maker and
                                     just talk about current affairs instead of waiting for update status.</p>
@@ -149,7 +147,7 @@
                                 <div class="profits__item-img">
                                     <img src="img/ic-profits-05.svg" alt="">
                                 </div>
-                                <h3 class="profits__item-title">Protection of business, intellectual property</h3>
+                                <a href="#"><h3 class="profits__item-title">Protection of business, intellectual property</h3></a>
                                 <p class="profits__item-description">And all the other time he will work on new diverse
                                     projects, so he will definitely not stop in professional development. One way or
                                     another, all Axon Partners will work for you instead of a corporate lawyer.</p>
@@ -161,7 +159,7 @@
                                 <div class="profits__item-img">
                                     <img src="img/ic-profits-06.svg" alt="">
                                 </div>
-                                <h3 class="profits__item-title">Judicial representation</h3>
+                                <a href="#"><h3 class="profits__item-title">Judicial representation</h3></a>
                                 <p class="profits__item-description">Is it a small, medium-sized company or a market
                                     leader? Local business or multinational company? Do you have your own legal department or not?</p>
                             </div>
@@ -171,7 +169,6 @@
             </section>
         </div>
     </div>
-
 
 
     <main class="main">
@@ -342,12 +339,9 @@
         </footer>
     </div>
 
-    <!-- jQuery -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Slick -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="js/script.js"></script>
 </body>
 </html>

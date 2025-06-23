@@ -27,6 +27,7 @@
             text-decoration: none;
             padding: 5px 7px;
             border-radius: 8px;
+            transition: background 0.3s ease;
             &:hover {
                 background: #F5F5FA;
             }
@@ -45,6 +46,10 @@
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
+        transition: opacity 0.3s ease;
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &__fb {
         fill: #B3B3BA;
@@ -55,6 +60,10 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding-left: 15px;
+        transition: opacity 0.3s ease;
+        &:hover {
+            opacity: 0.7;
+        }
         &-logo {
             display: block;
             img {
@@ -91,6 +100,7 @@
             border: none;
             width: 32px;
             height: 33px;
+            transition: all 0.3s ease;
             &.active {
                 background-image: url("../img/close.svg");
             }
@@ -107,6 +117,7 @@
             background-color: #ffffff;
             list-style: none;
             padding: 12px;
+            transition: background 0.3s ease;
             a {
                 display: flex;
                 margin: 15px 0;
@@ -140,7 +151,6 @@
         &__top {
             justify-content: flex-start;
             align-items: center;
-            //background-color: #ffffff;
             padding: 0;
             margin-bottom: 30px;
         }
@@ -189,6 +199,7 @@
             text-align: right;
             width: 24px;
             height: 24px;
+            transition: fill 0.3s ease;
             &:hover {
                 fill: #F0145A;
             }
@@ -219,6 +230,7 @@
                 list-style: none;
                 position: static;
                 padding: 30px 0 0;
+                transition: background 0.3s ease;
                 a {
                     margin: 0 15px 0 0;
                     padding: 0;
@@ -227,6 +239,7 @@
                     color: #24A3FF;
                     background: transparent;
                     font-size: 16px;
+                    transition: all 0.3s ease;
                     &.active {
                         color: #F0145A;
                         border-bottom: 2px solid #F0145A;
@@ -274,9 +287,10 @@
 
 
 .header--light {
-   /* background-color: #FFFFFF;*/
+    background-color: #FFFFFF;
     .header__lang a {
         color: #B3B3BA;
+        transition: background-color 0.3s ease;
         &:hover {
             background-color: #F5F5FA;
         }
@@ -291,6 +305,7 @@
     }
     .header__fb {
         fill: #B3B3BA;
+        transition: fill 0.3s ease;
         &:hover {
             fill: #F0145A;
         }
@@ -310,12 +325,16 @@
     @media (min-width: 768px) {
         .menu__list a {
             background-color: transparent;
+            transition: border-bottom 0.3s ease;
             &.active {
                 border-bottom: 2px solid #F0145A;
             }
             &:not(.active):hover {
                 border-bottom: 2px solid #24A3FF;
             }
+        }
+        .header__top {
+            background-color: #FFFFFF;
         }
     }
 }
@@ -328,6 +347,7 @@
     }
     .header__lang a {
         color: #FFFFFF;
+        transition: background-color 0.3s ease;
         &:hover {
             background-color: #46466E;
         }
@@ -342,6 +362,7 @@
     }
     .header__fb {
         fill: #FFFFFF;
+        transition: fill 0.3s ease;
         &:hover {
             fill: #F0145A;
         }
@@ -355,6 +376,7 @@
     .menu__list a {
         color: #FFFFFF;
         background-color: transparent;
+        transition: border-bottom 0.3s ease;
         &.active {
             color: #F0145A;
         }
@@ -369,6 +391,7 @@
         }
         .menu__list a {
             background-color: transparent;
+            transition: border-bottom 0.3s ease;
             &.active {
                 border-bottom: 2px solid #F0145A;
             }

@@ -6,6 +6,7 @@
         overflow-x: auto;
         margin-bottom: 30px;
         button {
+            cursor: pointer;
             border: none;
             background-color: transparent;
             color: #B3B3BA;
@@ -14,11 +15,18 @@
             white-space: nowrap;
             padding: 0;
             margin-right: 30px;
+            transition: opacity 0.3s ease;
             &.active {
                 background: var(--Gradient-Text-Red-Reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+            }
+            &:hover {
+                opacity: 0.7;
+                &.active {
+                    opacity: 1;
+                }
             }
         }
     }
